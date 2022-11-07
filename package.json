@@ -1,0 +1,16 @@
+{
+  "name": "fliphase",
+  "scripts": {
+    "start": "katnip start"
+  },
+  "dependencies": {
+    "katnip": "^0.0.38"
+  },
+  "main": "src/fliphase-main.js",
+  "browser": "src/fliphase-browser.jsx",
+  "type": "module",
+  "engines": {
+    "node": ">=16.x"
+  },
+  "plugins": []
+}
