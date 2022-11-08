@@ -1,4 +1,5 @@
 import {katnip} from "katnip";
+import PHONEFLIP from "bootstrap-icons/icons/phone-flip.svg";
 
 // This file will be run in the browser.
 // Here we do things like:
@@ -21,3 +22,12 @@ import {katnip} from "katnip";
 // Hook into the system in various ways, listen for events
 // to customize the client side behaivour.
 // katnip.addAction(/*...*/);
+
+katnip.addAction("getAdminMenu", (items)=>{
+	items.push({
+		title: 'Fliphase',
+		href: '/admin/fliphase',
+		priority: 40, 
+		icon: PHONEFLIP
+	})
+});
